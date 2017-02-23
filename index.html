@@ -14,39 +14,20 @@
 </head>
 <body>
 
-<nav class="navbar navbar" style="background-color: #d8dad7 ;">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Куда Сходить в Актобе</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Актобе</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Спорт<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Футбол</a></li>
-            <li><a href="#">Танцы</a></li>
-            <li><a href="#">Каток</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Театр</a></li>
-        <li><a href="#">Выставки</a></li>
-        <li><a href="#">Кино</a></li>
-        <li><a href="#">Концерты</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Зарегистрироваться</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Войти</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+
+<div class="w3-bar w3-red">
+  <a href="#" class="w3-bar-item w3-button">Актобе Гид</a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small">Театры</a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small">Кинотеатры</a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small">Парки</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div id="demo" class="w3-bar-block w3-red w3-hide w3-hide-large w3-hide-medium">
+  <a href="#" class="w3-bar-item w3-button">Театры</a>
+  <a href="#" class="w3-bar-item w3-button">Кинотеатры</a>
+  <a href="#" class="w3-bar-item w3-button">Парки</a>
+</div>
   
 
 
@@ -101,6 +82,20 @@
   <p>Здесь мы попытаемся найти где в Актобе можно провести время.
   <p>Соберем информацию вместе!</p>
 </div>
+
+
+<div id="bottom_nav">
+            <ul id="navigation">
+                <li class="x"><a title="Домой" href="index.html" >Домой</a></li>
+                <li class="x"><a title="Замечания" href="#" >Замечания</a></li>
+                <li class="x"><a title="О ресурсе" href="#" >О ресурсе</a></li>
+                <li class="x"><a title="Контакты" href="#" >Контакты</a></li>
+                <li class="x"><a title="Разработчикам" href="#" >Разработчикам</a></li>
+                <li class="contact" class="last"><a title="6" href="#" >.</a></li>
+            </ul>
+
+        </div> 
+
 <script>
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -120,7 +115,16 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
 }
 </script>
-
+<script>
+function myFunction() {
+    var x = document.getElementById("demo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
 
 </body>
 </html>
