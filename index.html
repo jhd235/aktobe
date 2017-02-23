@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Давай сходим</title>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="a.ico" type="image/x-icon">
+    <link rel="icon" href="a.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar" style="background-color: #d8dad7 ;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Куда Сходить в Актобе</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Актобе</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Спорт<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Футбол</a></li>
+            <li><a href="#">Танцы</a></li>
+            <li><a href="#">Каток</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Театр</a></li>
+        <li><a href="#">Выставки</a></li>
+        <li><a href="#">Кино</a></li>
+        <li><a href="#">Концерты</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Зарегистрироваться</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Войти</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+
+
+<div class="w3-container">
+  <h2>Места в Актобе</h2>
+  <p>Места в Актобе, куда можно сходить в свободное время.</p>
+</div>
+
+<div class="w3-content w3-display-container">
+
+<a class="w3-btn-floating w3-hover-dark-grey w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+<a class="w3-btn-floating w3-hover-dark-grey w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+
+<div class="w3-display-container mySlides">
+  <img src="img/mega.jpg" style="width:100%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Мега Актобе, Актобе, ул. Маметовой, 4а. <a href=https://ru.wikipedia.org/wiki/MEGA_Aktobe target=balnk>Википедия</a>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/hammer.jpg" style="width:100%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Спортивные мероприятия, ул. Батыс-2, участок 11 «В». <a href=http://hammer-sport.kz/ target=balnk>Хаммер-Спорт</a>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/dram.jpg" style="width:100%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Театры, г.Актобе, ул.Т.Ахтанова,52
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/vistavka.jpg" style="width:100%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Выставки
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/lokomotiv.jpg" style="width:100%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Кино
+  </div>
+</div>
+
+</div>
+<div class="container">
+  <h3>Куда сходить в свободное время?</h3>
+  <p>Здесь мы попытаемся найти где в Актобе можно провести время.
+  <p>Соберем информацию вместе!</p>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</body>
+</html>
