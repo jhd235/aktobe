@@ -36,7 +36,7 @@
   <p>Места в Актобе, куда можно сходить в свободное время.</p>
 </div>
 
-<div class="w3-content w3-display-container" style="width: 97%; float: left; display: inline-block;">
+<div class="w3-content w3-display-container" style="width: 95%; float: left; display: inline-block;">
 
 <a class="w3-btn-floating w3-hover-dark-grey w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
 <a class="w3-btn-floating w3-hover-dark-grey w3-display-right" onclick="plusDivs(1)">&#10095;</a>
@@ -85,7 +85,7 @@
 </address>
 </div>
 </div>
-<div style="width: 3%; display: inline-block;">
+<div style="width: 5%; display: inline-block;">
 Hellow world
 </div>
 </div>
